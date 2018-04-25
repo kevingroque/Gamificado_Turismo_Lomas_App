@@ -6,10 +6,41 @@
     android:layout_height="match_parent"
     tools:context="app.roque.com.gamificadoturismoapp.activities.HomeActivity">
 
-    <Button
-        android:id="@+id/btnLogout"
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LogOut"/>
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:text="Nombre"/>
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:text="Correo"/>
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:text="Id"/>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="LogOut"
+            android:onClick="logOut"/>
+    </LinearLayout>
 
 </RelativeLayout>
